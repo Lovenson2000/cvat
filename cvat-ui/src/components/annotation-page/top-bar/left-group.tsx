@@ -13,7 +13,6 @@ import Text from 'antd/lib/typography/Text';
 import { UndoIcon, RedoIcon } from 'icons';
 import { ActiveControl, ToolsBlockerState } from 'reducers';
 import { registerComponentShortcuts } from 'actions/shortcuts-actions';
-import AnnotationMenuComponent from 'components/annotation-page/top-bar/annotation-menu';
 import CVATTooltip from 'components/common/cvat-tooltip';
 import { ShortcutScope } from 'utils/enums';
 import { subKeyMap } from 'utils/component-subkeymap';
@@ -124,7 +123,6 @@ function LeftGroup(props: Props): JSX.Element {
                 </Modal>
             )}
             <Col className='cvat-annotation-header-left-group'>
-                <AnnotationMenuComponent />
                 <SaveAnnotationsButton />
                 <CVATTooltip overlay={`Undo: ${undoAction} ${undoShortcut}`}>
                     <Button
