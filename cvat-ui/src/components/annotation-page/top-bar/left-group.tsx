@@ -19,6 +19,7 @@ import { ActiveControl, ToolsBlockerState } from '../../../reducers';
 import { UndoIcon, RedoIcon } from '../../../icons';
 import SaveAnnotationsButton from './save-annotations-button';
 import ProcessAiButton from './process-ai-button';
+import ShowRandomUserDetails from './show-random-user';
 
 interface Props {
     saving: boolean;
@@ -148,6 +149,7 @@ function LeftGroup(props: Props): JSX.Element {
                     </Button>
                 </CVATTooltip>
                 <ProcessAiButton />
+                <ShowRandomUserDetails />
                 {includesDoneButton ? (
                     <CVATTooltip overlay={`Press "${drawShortcut}" to finish`}>
                         <Button type='link' className='cvat-annotation-header-done-button cvat-annotation-header-button' onClick={onFinishDraw}>
