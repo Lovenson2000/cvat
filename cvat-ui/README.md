@@ -38,3 +38,25 @@ yarn run build --mode=development     # without a minification
 
 Important: You also have to run CVAT REST API server (please read `https://docs.cvat.ai/docs/contributing/`)
 to correct working since UI gets all necessary data (tasks, users, annotations) from there
+
+## Feature: Random User Fetching Implementation
+- Added fetchRandomUser function with TypeScript interface
+- Implemented robust error handling and response validation
+- Added unit test cases for success and failure scenarios using Jest
+
+## Feature: ProcessAI function
+- Added processAI functionality
+- Implemented test cases for AI processing
+- Added UI button with RedoIcon
+
+## UI Cleanup Changes
+- Removed Header component for cleaner interface
+- Cleaned up top right corner icons
+- Removed Menu button from top left header
+- Removed unnecessary icons from sidebar
+
+## To run the tests:
+
+```bash
+yarn run test
+```
