@@ -57,17 +57,17 @@ To see the the UI, navigate to http://localhost:8080/
 - process-ai-button.tsx (cvat/cvat-ui/src/components/annotation-page/top-bar/process-ai-button.ts)
 - show-random-user.tsx (cvat/cvat-ui/src/components/annotation-page/top-bar/show-random-user.tsx)
 
-
-
-
-
-
-
-
-## Config files created:
-
+# Config files created:
 - Jest.config.ts - Jest configuration file
 - babel.config.js - Babel configuration file
+
+
+# Files modified:
+- package.json - Modified to include new dependencies and scripts
+- left-group.tsx (cvat/cvat-ui/src/components/annotation-page/top-bar/left-group.tsx)
+- controls-side-bar.tsx (cvat/cvat-ui/src/components/annotation-page/standard-workspace/controls-side-bar/controls-side-bar.tsx)
+- cvat-app.tsx (cvat/cvat-ui/src/components/cvat-app.tsx)
+- top-bar.tsx (cvat/cvat-ui/src/components/annotation-page/top-bar/top-bar.tsx)
 
 ## Commit list:
 
