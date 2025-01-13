@@ -49,20 +49,43 @@ Note: If you don't have docker installed, see https://docs.docker.com/compose/in
 
 To see the the UI, navigate to http://localhost:8080/
 
-## Feature: Random User Fetching Implementation
+## Lovenson's changes and files modified:
 
+# Files created:
+- fetch-random-user.ts (cvat/cvat-ui/src/actions/fetch-random-user.ts)
+- ai-control.tsx (cvat/cvat-ui/src/components/annotation-page/standard-workspace/controls-side-bar/ai-control.ts)
+- process-ai-button.tsx (cvat/cvat-ui/src/components/annotation-page/top-bar/process-ai-button.ts)
+- show-random-user.tsx (cvat/cvat-ui/src/components/annotation-page/top-bar/show-random-user.tsx)
+
+
+
+
+
+
+
+
+## Config files created:
+
+- Jest.config.ts - Jest configuration file
+- babel.config.js - Babel configuration file
+
+## Commit list:
+
+# Feature: Show fetched user on UI
+- Successfully showed fetched user data on UI
+- Added an icon to call the fetch user function and display on ui:
+
+# Feature: Random User Fetching Implementation
 - Added fetchRandomUser function with TypeScript interface
 - Implemented robust error handling and response validation
 - Added unit test cases for success and failure scenarios using Jest
 
-## Feature: ProcessAI function
-
+# Feature: ProcessAI function
 - Added processAI functionality
 - Implemented test cases for AI processing
 - Added UI button with RedoIcon
 
-## UI Cleanup Changes
-
+# UI Cleanup Changes
 - Removed Header component for cleaner interface
 - Cleaned up top right corner icons
 - Removed Menu button from top left header
@@ -91,6 +114,7 @@ This directory contains the code and icons for the sidebar that contains the con
 
 You need to write unit test for the new component you added. As of now, we're using Jest
 for unit testing. Read the docs here https://jestjs.io/docs/getting-started
+
 - Writing tests:
 You can do so by creating a new file in the `tests` directory or create a new `tests` directory if there
 is no tests directory. For example to write a test for the new icon control, you would create a new file (new-icon-control.test.tsx) in the `tests` directory.
@@ -101,6 +125,14 @@ Make sure you are the cvat-ui folder and run the following command to run the te
 ```bash
 yarn run test
 ```
+## Test coverage percentage:
+
+Tests coverage is a measure of how much of the code is tested by the unit tests. In this project, we aim to have a test coverage of at least 80%. To learn more about test coverage, you can read this article https://www.valentinog.com/blog/jest-coverage/
+
+To run the tests with coverage:
+```bash
+yarn run test --coverage
+```
 
 ## Styling conventions:
 - We use styled-components for styling.
@@ -108,17 +140,8 @@ yarn run test
 
 Each directory contains one scss file. To add style to new a component, just give the elements a class name that follows the BEM naming convention. and go the scss file and add the style to the class name.
 
+## Finding a file in the codebase:
+As the codebase is large, it can be difficult to find a specific file. Here are some tips for finding a file:
 
-
-
-## Finding a file through the developer console:
-
-## Files modified:
-
-## Config files added:
-
-## Where to put new test file:
-
-## Test coverage percentage:
-
-## An icon to call the fetch user function and display on ui:
+- Step 1: - Use the developer console in your browser to inspect the DOM elements and their class names.
+- Step 2: Use the search bar in your IDE (CMD + Shift + F) to search for the file name.
